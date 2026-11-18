@@ -1,16 +1,134 @@
-# React + Vite
+# Smart Campus Analytics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based student analytics dashboard that helps monitor academic
+performance, attendance, and student progress through interactive charts
+and student records.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+-   **Dashboard Overview** -- Displays total students, average
+    attendance, average marks, and at-risk student count.
+-   **Data Visualizations** -- Bar, pie, and line charts for exploring
+    student performance.
+-   **Student Records** -- View student information in a structured
+    table.
+-   **Search and Filters** -- Search students and filter records by
+    class or status, with sorting options.
+-   **Student Details** -- View individual attendance, average marks,
+    assignment completion, and subject-wise performance.
+-   **At-Risk Monitoring** -- Identifies students with attendance below
+    75% or average marks below 40%.
+-   **At-Risk Preview** -- Highlights students who may require academic
+    attention.
+-   **Performance Leaderboard** -- Shows the top five students based on
+    average marks.
+-   **Responsive Design** -- Includes layouts for desktop and mobile
+    screens.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-   React
+-   Vite
+-   JavaScript
+-   React Router
+-   Recharts
+-   Lucide React
+-   CSS
+-   JSON
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+``` text
+src/
+├── components/
+│   ├── AnalyticsCharts.jsx
+│   ├── AtRiskPreview.jsx
+│   ├── Leaderboard.jsx
+│   └── StatCard.jsx
+├── data/
+│   └── students.json
+├── layouts/
+│   └── DashboardLayout.jsx
+├── pages/
+│   ├── Overview.jsx
+│   └── StudentRecords.jsx
+├── utils/
+│   └── dashboardStats.js
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+```
+
+CSS files for the corresponding components, pages, and layout are also
+included in their respective folders.
+
+## Getting Started
+
+### Prerequisites
+
+-   Node.js and npm
+-   Git (optional, for cloning the repository)
+
+### Installation
+
+1.  Clone the repository:
+
+    ``` bash
+    git clone <repository-url>
+    ```
+
+2.  Move into the project directory:
+
+    ``` bash
+    cd smart-campus-analytics
+    ```
+
+3.  Install the dependencies:
+
+    ``` bash
+    npm install
+    ```
+
+4.  Start the development server:
+
+    ``` bash
+    npm run dev
+    ```
+
+5.  Open the local URL shown in the terminal.
+
+## Production Build
+
+To create a production build, run:
+
+``` bash
+npm run build
+```
+
+The generated production files are placed in the `dist` folder.
+
+## Dataset and At-Risk Criteria
+
+The dashboard uses a sample JSON dataset containing 25 fictional student
+records. Each record includes student details, class, attendance,
+subject-wise marks, and assignment completion information.
+
+A student is classified as **At Risk** if either of the following
+conditions is met:
+
+-   Attendance is below 75%, or
+-   Average marks are below 40%.
+
+The dashboard statistics and student status are derived from the
+dataset.
+
+## Notes
+
+-   This is a frontend-only academic project.
+-   Student information is sample data for demonstration purposes.
+-   No backend server or database is required.
+
+## Author
+
+Created as part of a Web Technology practical project.
