@@ -1,0 +1,427 @@
+[
+    {
+        "id": 101,
+        "name": "Aarav Mehta",
+        "class": "FYMCA A",
+        "attendance": 92,
+        "marks": {
+            "Data Structures": 88,
+            "Computer Networks": 84,
+            "Operating Systems": 91,
+            "DBMS": 86,
+            "Software Engineering": 89,
+            "Discrete Mathematics": 82
+        },
+        "assignmentsCompleted": 9,
+        "totalAssignments": 10,
+        "status": "Good"
+    },
+    {
+        "id": 102,
+        "name": "Diya Nair",
+        "class": "FYMCA B",
+        "attendance": 86,
+        "marks": {
+            "Data Structures": 78,
+            "Computer Networks": 82,
+            "Operating Systems": 85,
+            "DBMS": 80,
+            "Software Engineering": 88,
+            "Discrete Mathematics": 76
+        },
+        "assignmentsCompleted": 8,
+        "totalAssignments": 10,
+        "status": "Good"
+    },
+    {
+        "id": 103,
+        "name": "Kabir Shah",
+        "class": "FYMCA C",
+        "attendance": 68,
+        "marks": {
+            "Data Structures": 72,
+            "Computer Networks": 65,
+            "Operating Systems": 70,
+            "DBMS": 74,
+            "Software Engineering": 69,
+            "Discrete Mathematics": 66
+        },
+        "assignmentsCompleted": 6,
+        "totalAssignments": 10,
+        "status": "At Risk"
+    },
+    {
+        "id": 104,
+        "name": "Ananya Iyer",
+        "class": "FYMCA A",
+        "attendance": 95,
+        "marks": {
+            "Data Structures": 94,
+            "Computer Networks": 91,
+            "Operating Systems": 96,
+            "DBMS": 92,
+            "Software Engineering": 90,
+            "Discrete Mathematics": 89
+        },
+        "assignmentsCompleted": 10,
+        "totalAssignments": 10,
+        "status": "Good"
+    },
+    {
+        "id": 105,
+        "name": "Vivaan Rao",
+        "class": "FYMCA B",
+        "attendance": 73,
+        "marks": {
+            "Data Structures": 58,
+            "Computer Networks": 62,
+            "Operating Systems": 55,
+            "DBMS": 64,
+            "Software Engineering": 60,
+            "Discrete Mathematics": 57
+        },
+        "assignmentsCompleted": 7,
+        "totalAssignments": 10,
+        "status": "At Risk"
+    },
+    {
+        "id": 106,
+        "name": "Isha Kapoor",
+        "class": "FYMCA C",
+        "attendance": 81,
+        "marks": {
+            "Data Structures": 83,
+            "Computer Networks": 79,
+            "Operating Systems": 88,
+            "DBMS": 85,
+            "Software Engineering": 82,
+            "Discrete Mathematics": 80
+        },
+        "assignmentsCompleted": 9,
+        "totalAssignments": 10,
+        "status": "Good"
+    },
+    {
+        "id": 107,
+        "name": "Reyansh Patel",
+        "class": "FYMCA A",
+        "attendance": 62,
+        "marks": {
+            "Data Structures": 45,
+            "Computer Networks": 48,
+            "Operating Systems": 52,
+            "DBMS": 46,
+            "Software Engineering": 50,
+            "Discrete Mathematics": 43
+        },
+        "assignmentsCompleted": 5,
+        "totalAssignments": 10,
+        "status": "At Risk"
+    },
+    {
+        "id": 108,
+        "name": "Sara Thomas",
+        "class": "FYMCA B",
+        "attendance": 89,
+        "marks": {
+            "Data Structures": 91,
+            "Computer Networks": 87,
+            "Operating Systems": 90,
+            "DBMS": 88,
+            "Software Engineering": 93,
+            "Discrete Mathematics": 85
+        },
+        "assignmentsCompleted": 9,
+        "totalAssignments": 10,
+        "status": "Good"
+    },
+    {
+        "id": 109,
+        "name": "Aditya Joshi",
+        "class": "FYMCA C",
+        "attendance": 77,
+        "marks": {
+            "Data Structures": 69,
+            "Computer Networks": 73,
+            "Operating Systems": 71,
+            "DBMS": 75,
+            "Software Engineering": 68,
+            "Discrete Mathematics": 72
+        },
+        "assignmentsCompleted": 7,
+        "totalAssignments": 10,
+        "status": "Good"
+    },
+    {
+        "id": 110,
+        "name": "Myra Desai",
+        "class": "FYMCA A",
+        "attendance": 71,
+        "marks": {
+            "Data Structures": 82,
+            "Computer Networks": 78,
+            "Operating Systems": 85,
+            "DBMS": 80,
+            "Software Engineering": 77,
+            "Discrete Mathematics": 81
+        },
+        "assignmentsCompleted": 8,
+        "totalAssignments": 10,
+        "status": "At Risk"
+    },
+    {
+        "id": 111,
+        "name": "Arjun Kulkarni",
+        "class": "FYMCA B",
+        "attendance": 58,
+        "marks": {
+            "Data Structures": 66,
+            "Computer Networks": 61,
+            "Operating Systems": 64,
+            "DBMS": 68,
+            "Software Engineering": 62,
+            "Discrete Mathematics": 60
+        },
+        "assignmentsCompleted": 6,
+        "totalAssignments": 10,
+        "status": "At Risk"
+    },
+    {
+        "id": 112,
+        "name": "Zoya Khan",
+        "class": "FYMCA C",
+        "attendance": 93,
+        "marks": {
+            "Data Structures": 96,
+            "Computer Networks": 92,
+            "Operating Systems": 94,
+            "DBMS": 91,
+            "Software Engineering": 95,
+            "Discrete Mathematics": 90
+        },
+        "assignmentsCompleted": 10,
+        "totalAssignments": 10,
+        "status": "Good"
+    },
+    {
+        "id": 113,
+        "name": "Krish Malhotra",
+        "class": "FYMCA A",
+        "attendance": 74,
+        "marks": {
+            "Data Structures": 35,
+            "Computer Networks": 38,
+            "Operating Systems": 42,
+            "DBMS": 36,
+            "Software Engineering": 39,
+            "Discrete Mathematics": 34
+        },
+        "assignmentsCompleted": 4,
+        "totalAssignments": 10,
+        "status": "At Risk"
+    },
+    {
+        "id": 114,
+        "name": "Aanya Menon",
+        "class": "FYMCA B",
+        "attendance": 84,
+        "marks": {
+            "Data Structures": 80,
+            "Computer Networks": 86,
+            "Operating Systems": 83,
+            "DBMS": 88,
+            "Software Engineering": 85,
+            "Discrete Mathematics": 82
+        },
+        "assignmentsCompleted": 8,
+        "totalAssignments": 10,
+        "status": "Good"
+    },
+    {
+        "id": 115,
+        "name": "Rohan Gupta",
+        "class": "FYMCA C",
+        "attendance": 69,
+        "marks": {
+            "Data Structures": 55,
+            "Computer Networks": 58,
+            "Operating Systems": 61,
+            "DBMS": 57,
+            "Software Engineering": 60,
+            "Discrete Mathematics": 54
+        },
+        "assignmentsCompleted": 6,
+        "totalAssignments": 10,
+        "status": "At Risk"
+    },
+    {
+        "id": 116,
+        "name": "Meera Pillai",
+        "class": "FYMCA A",
+        "attendance": 97,
+        "marks": {
+            "Data Structures": 92,
+            "Computer Networks": 95,
+            "Operating Systems": 94,
+            "DBMS": 96,
+            "Software Engineering": 91,
+            "Discrete Mathematics": 93
+        },
+        "assignmentsCompleted": 10,
+        "totalAssignments": 10,
+        "status": "Good"
+    },
+    {
+        "id": 117,
+        "name": "Ishaan Verma",
+        "class": "FYMCA B",
+        "attendance": 72,
+        "marks": {
+            "Data Structures": 76,
+            "Computer Networks": 70,
+            "Operating Systems": 74,
+            "DBMS": 78,
+            "Software Engineering": 73,
+            "Discrete Mathematics": 71
+        },
+        "assignmentsCompleted": 7,
+        "totalAssignments": 10,
+        "status": "At Risk"
+    },
+    {
+        "id": 118,
+        "name": "Kiara Fernandes",
+        "class": "FYMCA C",
+        "attendance": 64,
+        "marks": {
+            "Data Structures": 81,
+            "Computer Networks": 79,
+            "Operating Systems": 84,
+            "DBMS": 82,
+            "Software Engineering": 80,
+            "Discrete Mathematics": 83
+        },
+        "assignmentsCompleted": 7,
+        "totalAssignments": 10,
+        "status": "At Risk"
+    },
+    {
+        "id": 119,
+        "name": "Dev Shah",
+        "class": "FYMCA A",
+        "attendance": 88,
+        "marks": {
+            "Data Structures": 87,
+            "Computer Networks": 85,
+            "Operating Systems": 89,
+            "DBMS": 86,
+            "Software Engineering": 90,
+            "Discrete Mathematics": 84
+        },
+        "assignmentsCompleted": 9,
+        "totalAssignments": 10,
+        "status": "Good"
+    },
+    {
+        "id": 120,
+        "name": "Tara Sinha",
+        "class": "FYMCA B",
+        "attendance": 76,
+        "marks": {
+            "Data Structures": 42,
+            "Computer Networks": 45,
+            "Operating Systems": 39,
+            "DBMS": 44,
+            "Software Engineering": 41,
+            "Discrete Mathematics": 38
+        },
+        "assignmentsCompleted": 5,
+        "totalAssignments": 10,
+        "status": "Good"
+    },
+    {
+        "id": 121,
+        "name": "Neil D'Souza",
+        "class": "FYMCA C",
+        "attendance": 91,
+        "marks": {
+            "Data Structures": 89,
+            "Computer Networks": 87,
+            "Operating Systems": 92,
+            "DBMS": 90,
+            "Software Engineering": 88,
+            "Discrete Mathematics": 91
+        },
+        "assignmentsCompleted": 9,
+        "totalAssignments": 10,
+        "status": "Good"
+    },
+    {
+        "id": 122,
+        "name": "Riya Chawla",
+        "class": "FYMCA A",
+        "attendance": 67,
+        "marks": {
+            "Data Structures": 63,
+            "Computer Networks": 59,
+            "Operating Systems": 65,
+            "DBMS": 61,
+            "Software Engineering": 66,
+            "Discrete Mathematics": 60
+        },
+        "assignmentsCompleted": 6,
+        "totalAssignments": 10,
+        "status": "At Risk"
+    },
+    {
+        "id": 123,
+        "name": "Atharv Bansal",
+        "class": "FYMCA B",
+        "attendance": 79,
+        "marks": {
+            "Data Structures": 74,
+            "Computer Networks": 77,
+            "Operating Systems": 72,
+            "DBMS": 76,
+            "Software Engineering": 75,
+            "Discrete Mathematics": 73
+        },
+        "assignmentsCompleted": 8,
+        "totalAssignments": 10,
+        "status": "Good"
+    },
+    {
+        "id": 124,
+        "name": "Misha Roy",
+        "class": "FYMCA C",
+        "attendance": 54,
+        "marks": {
+            "Data Structures": 86,
+            "Computer Networks": 82,
+            "Operating Systems": 88,
+            "DBMS": 84,
+            "Software Engineering": 87,
+            "Discrete Mathematics": 83
+        },
+        "assignmentsCompleted": 5,
+        "totalAssignments": 10,
+        "status": "At Risk"
+    },
+    {
+        "id": 125,
+        "name": "Omkar Sawant",
+        "class": "FYMCA A",
+        "attendance": 83,
+        "marks": {
+            "Data Structures": 28,
+            "Computer Networks": 35,
+            "Operating Systems": 32,
+            "DBMS": 38,
+            "Software Engineering": 34,
+            "Discrete Mathematics": 30
+        },
+        "assignmentsCompleted": 6,
+        "totalAssignments": 10,
+        "status": "At Risk"
+    }
+]

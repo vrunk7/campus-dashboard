@@ -1,0 +1,178 @@
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg-app);
+  color: #e8edf5;
+}
+
+.sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  background: var(--bg-sidebar);
+  padding: 28px 18px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--border-subtle);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--accent-lime);
+  margin-bottom: 55px;
+}
+
+.brand h2 {
+  font-size: 21px;
+}
+
+.nav-heading {
+  color: var(--text-secondary);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: 9px;
+  transition: 0.2s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background: var(--accent-lime);
+  color: var(--accent-lime-text-dark);
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  color: #e8edf5;
+  font-size: 13px;
+}
+
+.sidebar-footer span {
+  display: block;
+  color: var(--text-tertiary);
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.topbar {
+  height: 90px;
+  padding: 18px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.topbar h3 {
+  margin: 0 0 6px;
+}
+
+.topbar p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.academic-year {
+  color: var(--accent-lime);
+  background: var(--bg-surface-elevated);
+  padding: 9px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.page-content {
+  padding: 30px 35px;
+}
+
+
+@media (max-width: 700px) {
+  /* Stack sidebar above page content */
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  /* Compact top navigation */
+  .sidebar {
+    width: 100%;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    border-right: none;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .brand {
+    margin-bottom: 12px;
+    gap: 10px;
+  }
+
+  .brand h2 {
+    font-size: 19px;
+    margin: 0;
+  }
+
+  .nav-heading,
+  .sidebar-footer {
+    display: none;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .sidebar nav a {
+    flex: 1;
+    justify-content: center;
+    gap: 7px;
+    padding: 10px 7px;
+    font-size: 12px;
+  }
+
+  /* Header */
+  .topbar {
+    height: auto;
+    min-height: 65px;
+    padding: 13px 17px;
+    box-sizing: border-box;
+  }
+
+  .topbar h3 {
+    font-size: 16px;
+  }
+
+  .topbar p {
+    font-size: 11px;
+  }
+
+  .academic-year {
+    display: none;
+  }
+
+  /* Page spacing */
+  .page-content {
+    padding: 20px 16px;
+  }
+}

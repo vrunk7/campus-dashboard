@@ -1,0 +1,622 @@
+
+.records-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 25px 0 15px;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-surface-high);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 0 12px;
+  color: var(--text-secondary);
+}
+
+.search-box input {
+  width: 100%;
+  padding: 11px 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+}
+
+.search-box input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.records-toolbar select {
+  background: var(--bg-surface-high);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 10px 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+.records-toolbar select option {
+  background: var(--bg-surface-card);
+}
+
+.records-count {
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.records-count strong {
+  color: var(--text-primary);
+}
+
+.records-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 310px;
+  gap: 18px;
+  align-items: start;
+}
+
+.table-card,
+.student-detail-card {
+  min-width: 0;
+  background: var(--bg-surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 13px;
+  padding: 18px;
+}
+
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.student-table th {
+  color: var(--text-secondary);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 16px 12px;
+  background: var(--bg-surface-elevated);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.student-table th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+.student-table th:last-child {
+  border-radius: 0 8px 0 0;
+}
+
+.student-table td {
+  padding: 15px 12px;
+  font-size: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.student-table tbody tr {
+  transition: background 0.2s;
+}
+
+.student-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.student-table tbody tr:hover
+{
+  background: var(--bg-surface-elevated);
+}
+
+.student-table tbody tr.selected-row {
+  background: var(--bg-surface-elevated);
+  box-shadow: inset 3px 0 var(--accent-lime);
+}
+
+/* Student identity */
+
+.student-identity {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.student-avatar {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--bg-surface-high);
+  border: 1px solid var(--border-muted);
+  color: var(--accent-lime);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.student-table td strong {
+  font-size: 14px;
+}
+
+.student-id {
+  display: block;
+  color: var(--text-tertiary);
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+/* Class badge */
+
+.class-badge {
+  display: inline-block;
+  background: var(--bg-surface-high);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  border-radius: 20px;
+  padding: 6px 10px;
+  font-size: 10px;
+}
+
+/* Attendance progress */
+
+.attendance-cell {
+  min-width: 105px;
+}
+
+.attendance-cell strong {
+  display: block;
+  margin-bottom: 7px;
+  font-variant-numeric: tabular-nums;
+}
+
+.progress-track {
+  height: 5px;
+  width: 85px;
+  background: var(--bg-surface-high);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.progress-good {
+  background: var(--status-good-green);
+}
+
+.progress-warning {
+  background: var(--status-warning-amber);
+}
+
+.progress-risk {
+  background: var(--status-risk-red);
+}
+
+/* Marks */
+
+.marks-value {
+  font-size: 14px !important;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-primary);
+}
+
+.marks-excellent {
+  color: var(--accent-lime);
+}
+
+.marks-risk {
+  color: var(--status-risk-red);
+}
+
+.marks-out-of {
+  color: var(--text-tertiary);
+  font-size: 10px;
+  margin-left: 3px;
+}
+
+/* Status */
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.status-good {
+  color: var(--status-good-green);
+  background: rgba(74, 222, 128, 0.12);
+}
+
+.status-risk {
+  color: var(--status-risk-red);
+  background: var(--status-risk-bg);
+}
+
+/* Profile action */
+
+.view-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--bg-surface-high);
+  color: var(--accent-lime);
+  border: 1px solid var(--border-muted);
+  border-radius: 7px;
+  padding: 8px 10px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.view-button:hover {
+  background: var(--accent-lime);
+  color: var(--accent-lime-text-dark);
+  transform: translateY(-1px);
+}
+
+.empty-message {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 30px !important;
+}
+
+
+.student-detail-card {
+  position: sticky;
+  top: 20px;
+  min-width: 0;
+  background: var(--bg-surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+/* Heading */
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.detail-eyebrow {
+  display: block;
+  color: var(--accent-lime);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 7px;
+}
+
+.detail-header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.close-detail {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-surface-high);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 7px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.close-detail:hover {
+  background: var(--accent-lime);
+  color: var(--accent-lime-text-dark);
+}
+
+/* Profile identity */
+
+.profile-hero {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.profile-avatar {
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--bg-surface-high);
+  border: 1px solid var(--border-muted);
+  color: var(--accent-lime);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.profile-identity h3 {
+  font-size: 17px;
+  margin: 0 0 5px;
+}
+
+.profile-identity p {
+  color: var(--text-secondary);
+  font-size: 11px;
+  margin: 0 0 10px;
+}
+
+/* KPI statistics */
+
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 18px 0;
+}
+
+.profile-stat {
+  min-width: 0;
+  padding: 12px 9px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 9px;
+}
+
+.profile-stat span {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 10px;
+  margin-bottom: 9px;
+}
+
+.profile-stat strong {
+  display: block;
+  font-size: 17px;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+.lime-text {
+  color: var(--accent-lime);
+}
+
+.risk-text {
+  color: var(--status-risk-red) !important;
+}
+
+/* Sections */
+
+.profile-section {
+  margin-top: 22px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 13px;
+}
+
+.section-title h4 {
+  font-size: 13px;
+  margin: 0;
+}
+
+.section-title span {
+  color: var(--text-tertiary);
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+/* Attendance */
+
+.attendance-detail-value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
+.attendance-detail-value strong {
+  font-size: 18px;
+  font-variant-numeric: tabular-nums;
+}
+
+.attendance-detail-value span {
+  color: var(--text-secondary);
+  font-size: 10px;
+}
+
+.threshold-track,
+.subject-track {
+  height: 7px;
+  position: relative;
+  background: var(--bg-surface-high);
+  border-radius: 10px;
+  overflow: visible;
+}
+
+.threshold-fill,
+.subject-fill {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.threshold-marker {
+  position: absolute;
+  left: 75%;
+  top: -4px;
+  height: 15px;
+  width: 2px;
+  background: var(--text-primary);
+  opacity: 0.8;
+  z-index: 1;
+}
+
+/* Subject performance */
+
+.subject-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.subject-performance {
+  min-width: 0;
+}
+
+.subject-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.subject-row span {
+  color: var(--text-secondary);
+  font-size: 11px;
+  min-width: 0;
+}
+
+.subject-row strong {
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+
+.subject-threshold {
+  position: absolute;
+  left: 40%;
+  top: -3px;
+  height: 13px;
+  width: 2px;
+  background: var(--text-primary);
+  opacity: 0.65;
+  z-index: 1;
+}
+
+/* At-risk explanation */
+
+.intervention-note {
+  margin-top: 23px;
+  padding: 14px;
+  border: 1px solid rgba(224, 83, 83, 0.25);
+  background: var(--status-risk-bg);
+  border-radius: 10px;
+}
+
+.intervention-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}
+
+.intervention-heading strong {
+  color: var(--status-risk-red);
+  font-size: 14px;
+}
+
+.intervention-heading span {
+  color: var(--status-risk-red);
+  font-size: 11px;
+}
+
+.intervention-note p,
+.intervention-note li {
+  color: var(--text-secondary);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.intervention-note p {
+  margin: 10px 0 5px;
+}
+
+.intervention-note ul {
+  padding-left: 17px;
+  margin: 5px 0 0;
+}
+
+
+@media (max-width: 1100px) {
+  .records-content {
+    grid-template-columns: 1fr;
+  }
+
+  .student-detail-card {
+    position: static;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .records-content {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 15px;
+  }
+
+  .records-toolbar {
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 18px;
+  }
+
+  .records-toolbar select,
+  .search-box {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .table-card {
+    padding: 10px;
+  }
+
+  .table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .student-table {
+    min-width: 680px;
+  }
+
+  .student-detail-card {
+    padding: 15px;
+  }
+
+  .profile-stats {
+    gap: 6px;
+  }
+
+  .profile-stat {
+    padding: 10px 7px;
+  }
+}

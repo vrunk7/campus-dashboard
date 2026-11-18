@@ -1,0 +1,250 @@
+
+.risk-preview-card {
+  min-width: 0;
+  padding: 22px;
+  background: var(--bg-surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+    margin-top: 25px;
+
+}
+
+.risk-preview-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.risk-preview-eyebrow {
+  color: var(--accent-lime);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.risk-preview-header h2 {
+  font-size: 18px;
+  margin: 7px 0;
+}
+
+.risk-preview-header p {
+  color: var(--text-secondary);
+  font-size: 11px;
+  margin: 0;
+}
+
+.risk-total {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 9px;
+  color: var(--status-risk-red);
+  background: var(--status-risk-bg);
+}
+
+.risk-total strong {
+  font-size: 18px;
+  font-variant-numeric: tabular-nums;
+}
+
+.risk-summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(224, 83, 83, 0.2);
+  background: var(--status-risk-bg);
+  border-radius: 10px;
+}
+
+.risk-summary-icon {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  color: var(--status-risk-red);
+  background: rgba(224, 83, 83, 0.12);
+}
+
+.risk-summary strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.risk-summary p {
+  color: var(--text-secondary);
+  font-size: 10px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Student list */
+
+.risk-student-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.risk-student-row {
+  display: grid;
+  grid-template-columns: minmax(140px, 1fr) minmax(160px, 1fr) 34px;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 3px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.risk-student-row:last-child {
+  border-bottom: none;
+}
+
+.risk-student-identity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.risk-student-avatar {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--bg-surface-high);
+  border: 1px solid var(--border-muted);
+  color: var(--accent-lime);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.risk-student-name {
+  min-width: 0;
+}
+
+.risk-student-name strong,
+.risk-student-name span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.risk-student-name strong {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.risk-student-name span {
+  color: var(--text-tertiary);
+  font-size: 9px;
+}
+
+.risk-student-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.risk-student-metrics span {
+  display: block;
+  color: var(--text-tertiary);
+  font-size: 9px;
+  margin-bottom: 5px;
+}
+
+.risk-student-metrics strong {
+  display: block;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.risk-mini-track {
+  width: 65px;
+  height: 4px;
+  margin-top: 6px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--bg-surface-high);
+}
+
+.risk-mini-fill {
+  height: 100%;
+  border-radius: 10px;
+ /* background: var(--status-risk-red);*/
+}
+
+.risk-text {
+  color: var(--status-risk-red);
+}
+
+.risk-find-button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  background: var(--bg-surface-high);
+  color: var(--accent-lime);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.risk-find-button:hover {
+  background: var(--accent-lime);
+  color: var(--accent-lime-text-dark);
+}
+
+.risk-view-all {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding: 12px 14px;
+  border: 1px solid var(--border-muted);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--accent-lime);
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.risk-view-all:hover {
+  background: var(--accent-lime-glow);
+}
+
+@media (max-width: 650px) {
+  .risk-preview-card {
+    padding: 15px;
+  }
+
+  .risk-student-row {
+    grid-template-columns: minmax(0, 1fr) 34px;
+    gap: 10px;
+  }
+
+  .risk-student-metrics {
+    grid-column: 1 / -1;
+    padding-left: 46px;
+  }
+
+  .risk-find-button {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}

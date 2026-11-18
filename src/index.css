@@ -1,0 +1,45 @@
+
+:root {
+  /* Backgrounds */
+  --bg-app: #0c1511;
+  --bg-sidebar: #07100c;
+  --bg-surface-card: #141d19;
+  --bg-surface-elevated: #19231f;
+  --bg-surface-high: #242e29;
+
+  /* Borders */
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-muted: rgba(187, 242, 70, 0.15);
+
+  /* Accent */
+  --accent-lime: #bbf246;
+  --accent-lime-dim: #8cb530;
+  --accent-lime-glow: rgba(187, 242, 70, 0.18);
+  --accent-lime-text-dark: #0c1511;
+
+  /* Text */
+  --text-primary: #f1f5f2;
+  --text-secondary: #8ea096;
+  --text-tertiary: #aaaaaa;
+
+  /* Status */
+  --status-good-green: #bbf246;
+  --status-warning-amber: #fbbf24;
+  --status-risk-red: #ff4141;
+  --status-risk-bg: rgba(224, 83, 83, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-app);
+  color: var(--text-primary);
+}
+
+button, input, select {
+  font: inherit;
+}
